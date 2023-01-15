@@ -1,0 +1,69 @@
+<html>
+
+<head>
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    body {
+      background-color: #8e44ad;
+    }
+
+    h1 {
+      color: white;
+    }
+
+    .product-item {
+      background-color: #9b59b6;
+      color: white;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+
+    .logo-background {
+      background-image: url('C:/Users/ASMA/Desktop/ws-project/images/wsprojectlogo.png');
+
+      /* Change the path to match your image location */
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body class="logo-background">
+  <h3 Style="text-align: center;">TASTY menu</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for (var i=0; i < menu.length; i++) { %>
+        <tr>
+          <td>
+            <%= menu[i].name %>
+          </td>
+          <td>
+            <%= menu[i].description %>
+          </td>
+          <td>$<%= menu[i].price %>
+          </td>
+        </tr>
+        <% } %>
+    </tbody>
+  </table>
+</body>
+</html>

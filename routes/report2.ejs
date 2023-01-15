@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        /* Add some color to the bill */
+        body {
+            background-color: #e6e6fa;
+        }
+
+        h3 {
+            color: purple;
+        }
+        
+
+        /* Center the "شكرا" heading */
+        h3.thank-you {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h3 Style="text-align: center;">TASTY</h3>
+    <table>
+        <tr>
+            <th> Name: <%= name %>
+            </th>
+            <th> Email:<%= email %>
+            </th>
+
+        </tr>
+        <tr>
+            <th> contactNumber: <%= contactNumber %>
+            </th>
+            <th> TASTY: <%= TASTY %>
+            </th>
+            <th> paymentMethod: <%= paymentMethod %>
+            </th>
+        </tr>
+    </table>
+    <h3>Product Details</h3>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+        <% if(productDetails.length> 0){ %>
+            <% productDetails.forEach(product=> { %>
+                <tr>
+                    <td>
+                        <%= product.Name %>
+                    </td>
+                    <td>
+                        <%= product.Category %>
+                    </td>
+                    <td>
+                        <%= product.Quantity %>
+                    </td>
+                    <td>
+                        <%= product.Price %>
+                    </td>
+                    <td>
+                        <%= product.Total %>
+                    </td>
+                </tr>
+                <% }); %>
+                    <% } %>
+    </table>
+
+    <h3>Total: <%= total %>
+    </h3>
+
+    <h3 class="thank-you"> 🧡🧡شكرا</h3>
+
+</body>
+
+
+
+<footer class="footer" style="font-weight: bold;
+position: absolute;
+bottom:0; 
+background-color:rgb(238, 148, 236);
+left:0px;
+padding-left:470.5px;
+padding-right:509px;
+opacity:0.8;">
+    <p style="color:lightgrey;
+              font-size:18px;"> Asma Taba Senior BA/IT @TBS </p>
+
+</footer>
+
+</html>

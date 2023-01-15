@@ -1,0 +1,12 @@
+mysql
+doenv
+pool
+jwt
+ejs
+html 
+path
+uuid
+nodemailer
+bcrypt
+
+check packagejson

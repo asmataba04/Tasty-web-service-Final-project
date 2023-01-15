@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tasty </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .logo {
+            width: 10%;
+            height: 70px;
+            background-color: #6b27af;
+            margin-top: 10px;
+            /* adjust to your need */
+            background-color: #6b27af;
+         
+            /* changed from 50% */
+            border: solid 1px #6b27af;
+            /* Add a border */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+
+        .logo img {
+            width: 60%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #6b27af;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .stat {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 30%;
+        }
+
+        .stat h3 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .stat p {
+            color: #999;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="images\wsprojectlogo.png">
+    </div>
+    <h1>Tasty Cafe Dashboard</h1>
+    <div class="container">
+        <div class="stats">
+            <div class="stat">
+                <h3>
+                    <%= categoryCount %>
+                </h3>
+                <p>Categories</p>
+            </div>
+            <div class="stat">
+                <h3>
+                    <%= productCount %>
+                </h3>
+                <p>Products</p>
+            </div>
+            <div class="stat">
+                <h3>
+                    <%= billCount %>
+                </h3>
+                <p>Bills</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+<footer class="footer" style="font-weight: bold;
+position: absolute;
+bottom:0; 
+background-color: lightgray;
+padding-top: 1px;
+padding-right: 605px;
+padding-bottom: 2px;
+padding-left: 605px;
+opacity:0.7;">
+    <p style="color:purple;
+              font-size:18px;"> Asma Taba Senior BA/IT</p>
+
+</footer>
+
+</html>
